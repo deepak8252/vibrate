@@ -6,6 +6,9 @@ h4{
     section{
         margin: 10px 0px;
     }
+    .navbar .navbar-brand img{
+        height: 80px;
+    }
     .hero{
         background-image: url(../img/hero\ \(2\).jpg);
         background-position: center;
