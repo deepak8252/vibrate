@@ -1,0 +1,98 @@
+h4{
+    font-size: 45px;
+
+}
+@media screen and (max-width:799px) {
+    section{
+        margin: 10px 0px;
+    }
+    .hero{
+        background-image: url(../img/hero\ \(2\).jpg);
+        background-position: center;
+        width: 100%;
+        height: 80vh;
+       background-attachment: fixed;
+        color: white;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: start;
+         align-items: center;
+    }
+    .hero .heading-content{
+        width: 100%;
+        margin-right:10%;
+        padding: 10px;
+    }
+    .interior {
+        background:white;
+        width: 100%;
+        height: 70vh;
+        background-position: center right;
+        background-size: 100% 100% ;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .left{
+        margin-top: 6%;
+      text-align: center !important;
+    }
+    .looking .left1{
+        background-image: url("../img/hero\ \(2\).jpg");
+         background-position: center center;
+         background-repeat: no-repeat;
+         width: 100%;
+         height: 50vh;
+         background-size: 100% 100%;
+         background-attachment: fixed;
+     }
+     .looking .right1{
+        background:rgba(249, 230, 207,.6);
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 70vh;
+        background-size: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: center; */
+        align-items: center;
+        /* background-attachment: fixed; */
+        /* background-position: left; */
+    }
+    
+    .process .heading,.final .heading{
+        width: 100%;
+    }
+    .process .rightdesign{
+        background-image: linear-gradient( rgba(255, 236, 125, 0.9), transparent 100%) ,url(../img/process.avif);
+        height: 50vh;
+        width:100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        
+    }
+    .final .rightdesign{
+        /* background-image: linear-gradient( rgba(255, 236, 125, 0.9), transparent 80%) ,url(../img/process.avif); */
+        
+      background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.3)),
+              url(../img/reception.jpeg);
+          
+        height: 70vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-blend-mode: darken;
+    }
+    .excution .rightdesign{
+        width: 100%;
+    }
+    .excution .leftdesign .heading{
+        padding: 10% 0px;
+        width:100%;
+    }
+    
+    }
