@@ -169,7 +169,7 @@ a{
 
 /* interior section end */
 .looking .left1{
-   background-image: url("../img/hero\ \(2\).jpg");
+   background-image: url("../img/1.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     width: 50%;
@@ -257,7 +257,7 @@ margin: auto;
    background-color:  rgba(255, 236, 125, 0.9),
 }
 .process .rightdesign{
-    background-image: linear-gradient( rgba(255, 236, 125, 0.9), transparent 80%) ,url(../img/process.avif);
+    background-image: linear-gradient( rgba(255, 236, 125, 0.9), transparent 80%) ,url(../img/6afaa29f-3ffe-4f98-9507-2c31df5ecdaa.jpg);
     height: 100vh;
     width:50%;
     background-repeat: no-repeat;
@@ -273,7 +273,7 @@ margin: auto;
 }
 .final .rightdesign{ 
   background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.3)),
-          url(../img/reception.jpeg);   
+          url(../img/2.jpg);   
     height: 100vh;
     width: 50%;
     background-repeat: no-repeat;
@@ -286,7 +286,7 @@ margin: auto;
 }
 /* excution section start */
 .excution .rightdesign{
-    background: url(../img/reception.jpeg);   
+    background: url(../img/2.jpg);   
 height: 100vh;
 width: 50%;
 background-repeat: no-repeat;
@@ -312,11 +312,12 @@ background-attachment: fixed;
 /* excution start end */
 /* HomeInteriors css start */
 .HomeInteriors{
-    background-image: linear-gradient( rgba(245, 236, 236, 0.3),
-     rgba(255, 248, 248, 0.5),100%, transparent 100%) ,url(../img/sofabg.webp);
+    background-image: linear-gradient( rgba(245, 236, 236, 0.5),
+     rgba(255, 248, 248, 0.5),100%, transparent 100%) ,url(../img/sitting\ area\ FINAL_.jpg);
     width: 100%;
     height: 80vh;
     background-attachment: fixed;
+    text-align: center;
     background-repeat: no-repeat;
     background-size:100% 100%;
     background-position: center center;
@@ -339,7 +340,7 @@ background-attachment: fixed;
 .footer{
     width: 100%;
     display: flex;
-    height: 20vh;
+    /* height: 20vh; */
     background-image: url(../img/marbel.jpg);
     justify-content: center;
     align-items: center;
@@ -377,10 +378,13 @@ background-attachment: fixed;
 .aboutbanner{
     width: 100%;
     height: 50vh;
-    background-color: rgba(144, 132, 5, 0.7);
+    background-image: linear-gradient( rgba(2, 2, 2, 0.6), transparent 100%) ,url(../img/sitting\ area\ FINAL_.jpg);
+    background-position: center;
+    background-size: 100% 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 .f-bold{
     font-weight: 500 !important;
@@ -428,10 +432,13 @@ ul{
 .service-hero{
     width: 100%;
     height: 50vh;
-    background-color: rgba(144, 132, 5, 0.7);
+    background-image: linear-gradient( rgba(2, 2, 2, 0.6), transparent 100%) ,url(../img/IMG_20200829_125210.jpg);
+    background-position: center;
+    background-size: 100% 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 .residential-gallery,.hospitality-gallery {
     text-transform: capitalize;
@@ -442,3 +449,113 @@ ul{
     font-size: 18px;
     text-align: justify;
 }
+/* service card */
+/* tensile -structure-card css start */
+.structure-card{
+    background-color: rgb(255, 238, 238);
+  }
+  .structure-card .service-info{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    transition:all .4s;
+    overflow: hidden;
+    border-radius: 12px;
+  
+  }
+  .structure-card .service-info::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,.8);
+    /* border: 2px solid yellow; */
+    opacity: 0;
+    transition:all .4s;
+    transform: translatey(100px);
+    top: 0px;
+    bottom: 0px;
+    border-radius: 12px;
+  }
+  .structure-card .col-md-4 .service-info .img-content h3{
+    border-bottom: 2px solid white;
+    font-size: 20px;
+    text-align: center;
+    margin: 8% 0 5% 0;
+  }
+  .structure-card .service-info .img-content{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 3%;
+    opacity: 0;
+    transition:all .4s;
+  }
+  
+  .structure-card .service-info:hover::before ,.structure-card .service-info .img  img:hover::before{
+    opacity: .9; 
+    transition: all .4s;
+    transform: translatey(-0px);
+    
+  }
+  .structure-card .service-info:hover .img-content{
+   z-index: 1;
+    opacity: .9;
+    transition:all .4s;
+    color: white;
+  }
+  @media screen and (max-width:1050px) {
+   .structure-card .col-md-4{
+    width: 50%;
+    height: 240px;
+   }
+   .structure-card .service-info img{
+    height: 240px;
+    width: 100%;
+  }
+   .structure-card .service-info .img-content h3{
+    margin-top:0%;
+    font-size: 21px;
+  }
+  }
+  @media screen and (max-width:729px) {
+    .structure-card .col-md-4{
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+    .structure-card .service-info img{
+      height: 100%;
+      width: 100%;
+    }
+    .structure-card .service-info .img-content{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .structure-card .service-info .img-content h3{
+      margin-top:20%;
+      font-size: 21px;
+    }
+    p{
+      padding: 3px 20px !important;
+    }
+  }
+  .fixed-btn a {
+ text-transform: capitalize;
+ color: white;
+  }
+  .fixed-btn{
+    position: fixed;
+    top:300px;
+    left: 0;
+    background-color:teal;
+    color: white;
+    padding: 10px;
+    outline:none !important;
+    border: none;
+  }
