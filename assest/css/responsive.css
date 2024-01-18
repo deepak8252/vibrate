@@ -73,6 +73,11 @@ p{
     
     .process .heading,.final .heading{
         width: 100%;
+        padding: 10px 10px !important;
+    }
+    .process .heading h4{
+        font-size: 30px;
+        font-weight: 500;
     }
     .process .rightdesign{
         background-image: linear-gradient( rgba(255, 236, 125, 0.9), transparent 80%) ,url(../img/6afaa29f-3ffe-4f98-9507-2c31df5ecdaa.jpg);
@@ -86,15 +91,18 @@ p{
     .final .rightdesign{
         /* background-image: linear-gradient( rgba(255, 236, 125, 0.9), transparent 80%) ,url(../img/process.avif); */
         
-      background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.3)),
-              url(../img/reception.jpeg);
+        background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.3)),
+        url(../img/2.jpg);   
           
-        height: 70vh;
+        height: 60vh;
         width: 100%;
         background-repeat: no-repeat;
         background-position: center center;
         background-attachment: fixed;
         background-blend-mode: darken;
+    }
+    .final .leftdesign h4{
+        padding-top: 20px !important;
     }
     .excution .rightdesign{
         width: 100%;
@@ -112,5 +120,29 @@ p{
     .meet .img, .agreement, .img {
         margin-bottom: 2rem;
     }
-    
+    .process .heading,.final .heading{
+        width: 100%;
+    }
+    .customer .heading h4{
+        font-size: 22px;
+        text-align: center;
+        font-weight: 500;
+        padding: 10px 5px !important;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header .navbar-nav .nav-item .nav-link{
+        border-bottom: 2px solid rgb(8, 7, 7);
+        border-left: none;
+    }
+    .footer ul{
+        gap: 10px;
+    }
+    .footer ul li{
+        font-size: 17px;
+    }
     }

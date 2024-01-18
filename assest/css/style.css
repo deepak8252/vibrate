@@ -61,6 +61,10 @@ a{
     padding: 5px 15px !important;
     border-left: 1px solid lightgray;
     color: rgba(23, 23, 23,.7);
+    transition:  all .4s;
+}
+.navbar .nav-item .nav-link:hover{
+    color: rgb(40, 8, 8);
 }
 .header .btn{
     padding: 10px 15px;
